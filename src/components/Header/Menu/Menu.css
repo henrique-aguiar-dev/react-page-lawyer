@@ -27,7 +27,7 @@
 	display: none;
 	width: 300px;
 	position: absolute;
-	right: 20px;
+	right: 0;
 	top: 110px;
 	background: black;
 	text-align: center;
@@ -86,11 +86,16 @@
 
 @media (max-width: 768px) {
   .icon-menu-mob {
-    margin: 15px 10px;
+    margin: 15px 0px 10px 10px;
   }
 
 	.menu-mobile {
 		top: 75px;
 	}
-
 }
+
+@media (max-width: 360px) {
+	.menu-mobile {
+		width: 250px;
+	}
+} 

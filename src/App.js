@@ -1,19 +1,17 @@
 //Global Packages, modules...
 import React from 'react';
 
-//Components
-import Header from './components/Header/Header';
+import Main from './Pages/Main/Main';
 
 //Styles
 import GlobalStyles from './global/GlobalStyles';
 import './global/custom-font-awesome.css';
 
-
 function App() {
   return (
 		<>
 			<GlobalStyles />
-			<Header />
+			<Main />
 		</>
   );
 }

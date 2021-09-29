@@ -5,6 +5,11 @@ header {
 	background-color: black;
 	position: fixed;
 	border-bottom: 5px solid rgb(168, 168, 168);
+	z-index: 99;
+}
+
+.fix-header {
+	height: 115px;
 }
 
 .header-left{
@@ -40,7 +45,8 @@ header {
 		width: 40%;
 	}
 
-	header {
+	header,
+	.fix-header {
 		height: 80px;
 	}
 

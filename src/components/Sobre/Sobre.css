@@ -1,0 +1,59 @@
+.sobre {
+  position: relative;
+}
+
+.texto-sobre {
+  width: 60%;
+  text-align: left;
+	padding: 50px 50px 50px 100px;
+}
+
+.texto-sobre p {
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  padding: 20px;
+  line-height: 20px;
+}
+
+.img-sobre {
+  width: 40%;
+  height: 400px;
+  background-image: url("../../media/escr.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0;
+  top: 12%;
+}
+
+@media (max-width: 1080px) {
+  .img-sobre {
+    top: 14%;
+  }
+}
+
+@media (max-width: 980px) {
+  .img-sobre {
+    top: 20%;
+  }
+}
+
+@media (max-width: 640px) {
+	.flexbox.box-sobre {
+		display: block;
+	}
+
+  .texto-sobre {
+    width: 100%;
+		padding: 20px;
+  }
+
+  .img-sobre {
+    width: 80%;
+    height: 150px;
+    background-size: auto;
+    margin: 0 auto;
+    position: static;
+  }
+}

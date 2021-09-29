@@ -1,7 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
 
-import './GlobalFonts.css';
-
 export default createGlobalStyle`
 	* {
 		margin: 0;
@@ -21,17 +19,36 @@ export default createGlobalStyle`
 		background-size: cover;
 		background-attachment: fixed;
 		background-blend-mode: overlay;
+		color: white;
 	}
 
-	section {
+	h1{
+		font-size: 26px;
+		padding-bottom: 10px;
+		text-align: center;
+	}
+
+	h2{
+		font-size: 20px;
+		padding-bottom: 10px;
+		text-align: center;
+	}
+
+	p{font-size: 16px;}
+
+	section{
 		width: 100%;
+		padding: 80px 2%;
 	}
 
-	.container {
-		max-width: 1200px;
+	.container{
+		max-width: 1300px;
 		height: 100%;
+		background-color: rgba(0,0,0,0.95);
+		border-radius: 5px;
 		margin: 0 auto;
-		padding: 0 2%;
+		padding: 20px 0;
+		text-align: center;
 	}
 
 	.flexbox {

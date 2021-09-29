@@ -1,0 +1,41 @@
+.sm-icons-header {
+	justify-content: right;
+  display: inline-flex;
+}
+
+.sm-icons-header a i{
+	font-size: 25px;
+	color: white;
+	padding: 15px 20px 30px 10px;
+}
+
+.sm-icons-footer {
+  display: inline-flex;
+}
+
+.sm-icons-footer i {
+  color: white;
+  font-size: 40px;
+  padding: 0 10px;
+}
+
+@media (max-width: 1400px) {
+	.sm-icons-header a i {
+		padding: 15px 15px 30px 10px;
+	}
+}
+
+@media (max-width: 1080px) {
+	.sm-icons-header a i {
+		padding: 10px;
+	}
+}
+
+@media (max-width: 768px) {
+	@media (max-width: 1080px) {
+		.sm-icons-header a i {
+			padding: 7px;
+			font-size: 22px;
+		}
+	}
+}

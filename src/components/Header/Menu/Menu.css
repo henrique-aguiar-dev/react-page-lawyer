@@ -1,0 +1,96 @@
+.menu-desktop {
+  width: 100%;
+  text-align: right;
+}
+
+.menu-desktop ul{
+	list-style-type: none;
+	display: inline-flex;
+}
+
+.menu-desktop ul li{
+	margin: 0 10px;
+}
+
+.menu-desktop ul li a{
+	color: white;
+	font-size: 18px;
+	text-decoration: none;
+	padding: 13px;
+}
+
+.menu-desktop ul li a:hover{
+	background: radial-gradient(rgba(200,200,200,0.4) 35%, rgba(0,0,0,0.8) 65%);
+}
+
+.menu-mobile{
+	display: none;
+	width: 300px;
+	position: absolute;
+	right: 20px;
+	top: 110px;
+	background: black;
+	text-align: center;
+	border-bottom: 5px solid rgb(168, 168, 168);
+}
+
+.menu-mobile ul li{
+	padding: 10px 0;
+	list-style-type: none;
+}
+
+.menu-mobile ul li a{
+	text-decoration: none;
+	color: white;
+	font-size: 16px;
+	padding: 10px;
+}
+
+.menu-mobile ul li a:hover{
+	background: radial-gradient(rgba(200,200,200,0.5) 35%, rgba(0,0,0,0.8) 65%);
+}
+
+.icon-menu-mob {
+  width: 40px;
+  height: 40px;
+  display: none;
+  margin: 15px;
+}
+
+.icon-menu-mob > i {
+  font-size: 38px;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 1400px) {
+	.menu-desktop ul li {
+		margin: 0 5px;
+	}
+
+	.menu-desktop ul li a {
+		font-size: 16px;
+		padding: 8px;
+	}
+}
+
+@media (max-width: 1080px) {
+  .menu-desktop {
+    display: none;
+  }
+
+  .icon-menu-mob {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .icon-menu-mob {
+    margin: 15px 10px;
+  }
+
+	.menu-mobile {
+		top: 75px;
+	}
+
+}

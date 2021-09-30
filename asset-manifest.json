@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/react-page-lawyer/static/css/main.a655ef55.chunk.css",
+    "main.js": "/react-page-lawyer/static/js/main.66648025.chunk.js",
+    "main.js.map": "/react-page-lawyer/static/js/main.66648025.chunk.js.map",
+    "runtime-main.js": "/react-page-lawyer/static/js/runtime-main.e9e56ad8.js",
+    "runtime-main.js.map": "/react-page-lawyer/static/js/runtime-main.e9e56ad8.js.map",
+    "static/js/2.2607f526.chunk.js": "/react-page-lawyer/static/js/2.2607f526.chunk.js",
+    "static/js/2.2607f526.chunk.js.map": "/react-page-lawyer/static/js/2.2607f526.chunk.js.map",
+    "index.html": "/react-page-lawyer/index.html",
+    "static/css/main.a655ef55.chunk.css.map": "/react-page-lawyer/static/css/main.a655ef55.chunk.css.map",
+    "static/js/2.2607f526.chunk.js.LICENSE.txt": "/react-page-lawyer/static/js/2.2607f526.chunk.js.LICENSE.txt",
+    "static/media/bg.jpg": "/react-page-lawyer/static/media/bg.f390ff25.jpg",
+    "static/media/equipe02.jpg": "/react-page-lawyer/static/media/equipe02.d13e2c37.jpg",
+    "static/media/equipe03.jpg": "/react-page-lawyer/static/media/equipe03.4e7de3f8.jpg",
+    "static/media/Sobre.css": "/react-page-lawyer/static/media/escr.63ad60d3.jpg",
+    "static/media/custom-font-awesome.css": "/react-page-lawyer/static/media/fontawesome-webfont.f691f37e.woff",
+    "static/media/logotop.png": "/react-page-lawyer/static/media/logotop.ab1a7b14.png",
+    "static/media/Contato.css": "/react-page-lawyer/static/media/mapa.4e5b2bd0.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e9e56ad8.js",
+    "static/js/2.2607f526.chunk.js",
+    "static/css/main.a655ef55.chunk.css",
+    "static/js/main.66648025.chunk.js"
+  ]
+}

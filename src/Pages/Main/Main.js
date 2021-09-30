@@ -6,6 +6,8 @@ import Sobre from '../../components/Sobre/Sobre';
 import Areas from '../../components/Areas/Areas';
 import Equipe from '../../components/Equipe/Equipe';
 import Contato from '../../components/Contato/Contato';
+import Artigos from '../../components/Artigos/Artigos';
+import Footer from '../../components/Footer/Footer';
 
 const Main = () => {
 	return (
@@ -16,6 +18,8 @@ const Main = () => {
 			<Areas />
 			<Equipe />
 			<Contato />
+			<Artigos />
+			<Footer />
 		</>
 	);
 }

@@ -1,0 +1,99 @@
+.footer {
+  width: 100%;
+  margin: 0;
+  padding: 10px 2%;
+  background: black;
+  text-align: center;
+  border-top: 5px solid rgb(168, 168, 168);
+}
+
+.footer > .container {
+  padding: 10px 2%;
+}
+
+.box-footer {
+  width: 100%;
+  display: inline-flex;
+}
+
+.box-footer-single {
+  width: 33.3%;
+}
+
+.bfs1 h2,
+.bfs3 ul {
+  text-align: left;
+  margin-left: 60px;
+}
+
+.sm-icons-footer i {
+  font-size: 38px;
+  color: white;
+  padding: 20px;
+}
+
+.bfs3 ul {
+  list-style-type: circle;
+}
+
+.bfs3 ul li a {
+  color: white;
+  text-decoration: none;
+  line-height: 20px;
+}
+
+.bfs3 ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer small {
+  font-size: 10px;
+}
+
+@media (max-width: 768px) {
+  .box-footer {
+    flex-wrap: wrap;
+  }
+
+  .bfs1,
+  .bfs2 {
+    width: 50%;
+  }
+
+  .bfs3 {
+    width: 100%;
+  }
+
+  .bfs3 ul {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .box-footer {
+    display: inline-block;
+  }
+
+  .box-footer-single {
+    width: 100%;
+  }
+
+	.bfs1 h2 {
+		margin-left: 30px;
+	}
+
+  .bfs2,
+  .bfs3 {
+    padding-top: 20px;
+  }
+
+  .bfs3 ul {
+    width: 90%;
+  }
+
+	.bfs3 ul li a {
+		font-size: 14px;
+	}
+
+}

@@ -1,12 +1,12 @@
 .sm-icons-header {
-	justify-content: right;
+  justify-content: right;
   display: inline-flex;
 }
 
-.sm-icons-header a i{
-	font-size: 25px;
-	color: white;
-	padding: 15px 20px 30px 10px;
+.sm-icons-header a i {
+  font-size: 25px;
+  color: white;
+  padding: 15px 20px 30px 10px;
 }
 
 .sm-icons-footer {
@@ -20,22 +20,26 @@
 }
 
 @media (max-width: 1400px) {
-	.sm-icons-header a i {
-		padding: 15px 15px 30px 10px;
-	}
+  .sm-icons-header a i {
+    padding: 15px 15px 30px 10px;
+  }
 }
 
 @media (max-width: 1080px) {
-	.sm-icons-header a i {
-		padding: 10px;
-	}
+  .sm-icons-header a i {
+    padding: 10px;
+  }
 }
 
 @media (max-width: 768px) {
-	@media (max-width: 1080px) {
-		.sm-icons-header a i {
-			padding: 7px;
-			font-size: 22px;
-		}
+  .sm-icons-header a i {
+    padding: 7px;
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 500px) {
+	.sm-icons-footer a i {
+		padding: 0 20px;
 	}
 }

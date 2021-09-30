@@ -1,0 +1,42 @@
+.box-artigos {
+  width: 100%;
+}
+
+.art2 {
+  display: none;
+  padding-top: 1px;
+}
+
+.art-single {
+  width: 80%;
+  background-color: white;
+  margin: 10px auto;
+  text-align: left;
+  color: black;
+  padding: 7px 10px;
+  border-radius: 15px;
+}
+
+.art-single span {
+  font-size: 12px;
+}
+
+.art-single p {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.art-single p:hover {
+  text-decoration: underline;
+}
+
+.nav-art {
+  width: 100%;
+}
+
+.nav-art i {
+  margin: 10px auto;
+  font-size: 35px;
+  cursor: pointer;
+}

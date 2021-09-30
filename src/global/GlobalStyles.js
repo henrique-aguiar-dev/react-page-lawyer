@@ -10,7 +10,6 @@ export default createGlobalStyle`
 	html,
 	body {
 		width: 100%;
-		height: 100%;
 		font-family: "Verdana", sans-serif;
 		scroll-behavior: smooth;
 		background: url(${require("../media/bg.jpg").default}) rgba(0,0,0,0.7);
@@ -55,5 +54,11 @@ export default createGlobalStyle`
 		width: 100%;
 		height: 100%;
 		display: inline-flex;
+	}
+
+	@media (max-width: 460px) {
+		section {
+			padding: 40px 2%;
+		}
 	}
 `

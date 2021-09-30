@@ -1,0 +1,30 @@
+.atuacao-single {
+  width: 33.3%;
+  margin-left: 20px;
+  padding: 20px 20px 20px 50px;
+  border-left: 2px solid white;
+}
+
+.atuacao-single ul {
+  text-align: left;
+}
+
+.atuacao-single ul li {
+  margin: 5px 0;
+  list-style-type: circle;
+}
+
+@media (max-width: 768px) {
+	.flexbox.box-atuacao{
+		display: block;
+		padding: 0 20px;
+	}
+	
+	.atuacao-single{
+		width: 100%;
+		border-left: none;
+		border-bottom: 2px solid white;
+		margin: 0 auto;
+		padding: 20px;
+	}
+}

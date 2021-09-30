@@ -1,0 +1,180 @@
+.box-contato {
+  padding: 20px 30px;
+}
+
+.contato-left,
+.contato-right {
+  width: 50%;
+}
+
+.contato-left {
+  padding: 0 30px;
+}
+
+.dados-contato h2,
+.dados-contato p {
+  text-align: left;
+  padding-top: 10px;
+  padding-left: 40px;
+}
+
+.mapa {
+  width: 300px;
+  height: 300px;
+  /*substituir pelo script*/
+  background-image: url("../../media/mapa.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  /*------------*/
+  border: 3px solid white;
+  margin: 20px auto;
+}
+
+.contato-right form {
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+form .form {
+  height: 45px;
+  outline: none;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+form .nome,
+.assu,
+.msg {
+  width: 100%;
+}
+
+form .email {
+  width: 50%;
+}
+
+form .tel {
+  width: calc(50% - 10px);
+  margin-left: 10px;
+}
+
+.msg {
+  min-height: 200px;
+  outline: none;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 15px;
+  font-family: inherit;
+  line-height: 18px;
+  resize: none;
+}
+
+form input[type="submit"],
+.back-form-confirm {
+  width: 150px;
+  height: 45px;
+  border-radius: 15px;
+  background-color: rgb(200, 200, 200);
+  font-size: 22px;
+  font-weight: bold;
+  margin: 30px auto;
+  border: 0;
+  cursor: pointer;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.back-form-confirm {
+  display: inline-block;
+  color: black;
+  text-decoration: inherit;
+  line-height: 45px;
+}
+
+.nome,
+.assu,
+.msg,
+.email .tel {
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+form input[type="submit"]:active {
+  background-color: rgb(100, 100, 100);
+  border-left: 3px solid rgb(200, 200, 200);
+  border-top: 3px solid rgb(200, 200, 200);
+}
+
+.alert-submit {
+  display: none;
+  width: 100%;
+  height: 20px;
+  margin: 0 auto;
+  font-weight: bold;
+}
+
+#msg-sended {
+  color: rgb(134, 204, 134);
+}
+
+#msg-error {
+  color: rgb(231, 141, 141);
+}
+
+@media (max-width: 768px) {
+  .flexbox.box-contato {
+    display: inline-block;
+  }
+
+  .contato-left {
+    width: 100%;
+  }
+
+  .contato-right {
+    width: 100%;
+    padding-top: 20px;
+  }
+
+  .dados-contato h2,
+  .dados-contato p {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .mapa {
+    margin: 20px auto;
+  }
+}
+
+@media (max-width: 500px) {
+	.contato h2,
+	.contato p {
+		padding: 10px 10px 0 10px;
+	}
+
+  form .email {
+    width: 100%;
+  }
+
+  form .tel {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .box-contato {
+    padding: 20px 2%;
+  }
+
+  #send {
+    margin: 30px auto;
+  }
+
+  .mapa {
+		margin: 10px auto;
+    width: 250px;
+    height: 200px;
+  }
+}

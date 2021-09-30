@@ -52,6 +52,7 @@ const Contato = () => {
 					</div>
 				</div>
 			</div>
+			<div id="anchor-artigos"></div>
 		</section>
 	);
 }

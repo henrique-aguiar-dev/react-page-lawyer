@@ -14,6 +14,7 @@ const Sobre = () => {
 					<div className="img-sobre"></div>
 				</div>
 			</div>
+			<div id="anchor-atuacao"></div>
 		</section>
 	);
 }

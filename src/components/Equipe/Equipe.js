@@ -78,6 +78,7 @@ const Equipe = () => {
 				</div>
 
 			</div>
+			<div id="anchor-contato"></div>
 		</section>
 	);
 }

@@ -36,6 +36,7 @@ const Areas = () => {
 					</div>
 				</div>
 			</div>
+			<div id="anchor-equipe"></div>
 		</section>
 	);
 }

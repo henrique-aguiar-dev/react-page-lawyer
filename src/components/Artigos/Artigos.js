@@ -1,32 +1,31 @@
-import React from 'react';
+import React, { useRef } from 'react';
 
 import { slideToggle } from '../../modules/custom-lib';
 
 import './Artigos.css';
 
 const Artigos = () => {
+	const moreOrLess = useRef(null);
+	const moreArticles = useRef(null);
 	let opened = false;
 	
-	const moreArticles = (icon) => {
-		console.log(opened)
-		const moreOrLess = document.querySelector('.nav-art h2');
-		const moreArticles = document.querySelector('.art2');
-		slideToggle(moreArticles, 400);
+	const showMoreArticles = (icon) => {
+		slideToggle(moreArticles.current, 400);
 
 		if (opened) {
 			icon.classList.remove('fa-chevron-circle-down');
 			icon.classList.add('fa-chevron-circle-up');
-			moreOrLess.innerHTML = "Menos artigos";
+			moreOrLess.current.innerHTML = "Menos artigos";
 		} else {
 			icon.classList.remove('fa-chevron-circle-up');
 			icon.classList.add('fa-chevron-circle-down');
-			moreOrLess.innerHTML = "Mais artigos";
+			moreOrLess.current.innerHTML = "Mais artigos";
 		}
 	}
 
 	const handleClick = (e) => {
 		opened = !opened
-		moreArticles(e.target);
+		showMoreArticles(e.target);
 	}
 
 	return (
@@ -56,7 +55,7 @@ const Artigos = () => {
 						<p>Trabalhador Marítimo: definição e legislação aplicável</p>
 					</div>
 				</div>
-				<div className="box-artigos art2">
+				<div ref={moreArticles} className="box-artigos art2">
 					<div className="art-single">
 						<span>17/08/2018</span>
 						<p>Reconhecimento de vínculo de emprego: execução das contribuições sociais do período</p>
@@ -79,7 +78,7 @@ const Artigos = () => {
 					</div>
 				</div>
 				<div className="nav-art">
-					<h2>Mais artigos</h2>
+					<h2 ref={moreOrLess} >Mais artigos</h2>
 					<i className="fa fa-chevron-circle-down" onClick={handleClick}></i>
 				</div>
 			</div>

@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useState } from 'react';
+import React, { useLayoutEffect, useState, useRef } from 'react';
 
 import { carouselBuilder } from '../../modules/hcarrousel';
 
@@ -6,6 +6,10 @@ import './Equipe.css';
 
 const Equipe = () => {
 	const [width] = useState(window.innerWidth);
+	const slidesContainer = useRef(null);
+	const bulletsContainer = useRef(null);
+	const arrowLeft = useRef(null);
+	const arrowRight = useRef(null);
 
 	
 	useLayoutEffect(() => {
@@ -18,11 +22,11 @@ const Equipe = () => {
 
 	useLayoutEffect(() => {
 		const carousel = {
-			slidesContainer: document.querySelector('.carousel-container'),
+			slidesContainer: slidesContainer.current,
 			allSlides: document.querySelectorAll('.slide-single'),
-			bulletsContainer: document.querySelector('.carousel-bullets'),
-			arrowLeft: document.querySelector('#navprev'),
-			arrowRight: document.querySelector('#navnext'),
+			bulletsContainer: bulletsContainer.current,
+			arrowLeft: arrowLeft.current,
+			arrowRight: arrowRight.current,
 			autoSlide: false,
 			speed: 500,
 			interval: 5000
@@ -35,7 +39,7 @@ const Equipe = () => {
 		<section className="equipe">
 			<div className="container">
 				<h1>Equipe</h1>
-				<div className="carousel-container disable-select" draggable="false">
+				<div ref={slidesContainer} className="carousel-container disable-select" draggable="false">
 
 					<div className="slide-single eq1" draggable="false">
 						<div className="img-equipe">
@@ -72,9 +76,9 @@ const Equipe = () => {
 				</div>
 
 				<div className="flexbox box-bullets">
-					<i className="fa fa-chevron-circle-left arrows" id="navprev"></i>
-					<div className="carousel-bullets"></div>
-					<i className="fa fa-chevron-circle-right arrows" id="navnext"></i>
+					<i ref={arrowLeft} className="fa fa-chevron-circle-left arrows" id="navprev"></i>
+					<div ref={bulletsContainer} className="carousel-bullets"></div>
+					<i ref={arrowRight} className="fa fa-chevron-circle-right arrows" id="navnext"></i>
 				</div>
 
 			</div>

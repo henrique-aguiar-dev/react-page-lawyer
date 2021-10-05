@@ -1,11 +1,11 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from 'react';
+import React, { forwardRef } from 'react';
 
 import './Menu.css';
 
-const Menu = (props) => {
+const Menu = forwardRef((props, ref) => {
 	return (
-		<nav className={props.className}>
+		<nav ref={ref} className={props.className}>
 			<ul>
 				<li><a href="#">Sobre nós</a></li>
 				<li><a href="#anchor-atuacao">Áreas de atuação</a></li>
@@ -15,6 +15,6 @@ const Menu = (props) => {
 			</ul>
 		</nav>
 	)
-}
+});
 
 export default Menu;

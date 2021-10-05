@@ -1,4 +1,4 @@
-import React, { useEffect, useState }from 'react';
+import React, { useEffect, useState, useRef }from 'react';
 
 import LogoHeader from './Logo/LogoHeader';
 import Menu from './Menu/Menu';
@@ -8,6 +8,7 @@ import { slideUp, slideDown } from '../../modules/custom-lib'
 import './Header.css';
 
 const Header = () => {
+	const menuMobile = useRef(null);
 	const [clicked, setClicked] = useState(false);
 	const [width, setWidth] = useState({width: window.innerWidth});
 
@@ -21,20 +22,18 @@ const Header = () => {
 	}, [width])
 
 	const handleClickMenuIcon = (event) => {
-		const menuMobile = document.querySelector('.menu-mobile');
-
 		if (!clicked) {
 			setClicked(true);
-			slideDown(menuMobile, 500);
+			slideDown(menuMobile.current, 500);
 		} else {
 			setClicked(false);
-			slideUp(menuMobile, 500);
+			slideUp(menuMobile.current, 500);
 		}
 
 		window.addEventListener('click', e => {
 			if(e.target.localName !== 'li' && e.target !== event.target) {
 				setClicked(false);
-				slideUp(menuMobile, 500);
+				slideUp(menuMobile.current, 500);
 			}
 		})
 
@@ -53,7 +52,7 @@ const Header = () => {
 						<i onClick={handleClickMenuIcon} className="fa fa-bars" aria-hidden="true"></i>
 					</div>
 					<Menu className="menu-desktop"/>
-					<Menu className="menu-mobile"/>
+					<Menu className="menu-mobile" ref={menuMobile}/>
 					<SocialIcons class={"sm-icons-header"} />
 				</div>
 			</div>

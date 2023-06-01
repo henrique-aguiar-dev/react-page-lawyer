@@ -2,7 +2,7 @@
 
 Landing page comercial para advogados;
 
-https://apilogik.github.io/react-page-lawyer
+https://henrique-aguiar-dev.github.io/react-page-lawyer/
 
 Feita com REACT / JS;
 
